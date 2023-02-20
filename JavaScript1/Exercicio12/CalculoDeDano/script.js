@@ -20,31 +20,6 @@ const personagemOne = prompt('Nome do personagem 1');
 const atk = parseFloat(prompt('Poder de ATK'));
 
 const personagemTwo = prompt('Nome do personagem 2');
-const Hp = parseFloat(prompt('Vida do personagem 2'));
+const Hp = parseFloat(prompt('Vida do personagem 2')); 
 const def = parseFloat(prompt('Defesa do personagem 2'));
 
- if (isNaN(def) || atk > def ) {
-  alert(`
-  ${personagemOne}
-  causou dano: ${atk}
-
-  ${personagemTwo}
-  tem ${Hp}/${Hp - atk} de Vida
-  `)
-} if (def > 1 || atk > def) {
-  alert(`
-  ${personagemOne}
-  causou dano: ${atk}
-
-  ${personagemTwo}
-  tem ${Hp}/${Hp - (atk- def)} de Vida
-  `)
-} if (atk < def || atk === def) {
-  alert(`
-  ${personagemOne}
-  causou dano: ${atk}
-
-  ${personagemTwo}
-  tem ${def} de defesa, dano bloqueado!!!
-  `)
-}
